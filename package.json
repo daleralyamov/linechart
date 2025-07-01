@@ -1,0 +1,16 @@
+{
+  "name": "linechart",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "type": "module",
+  "repository": "git@github.com:daleralyamov/linechart.git",
+  "author": "DalerAlyamov <developer.daler@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}

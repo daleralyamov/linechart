@@ -5,16 +5,23 @@
 }
 
 body {
-  background: #000;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #666;
 }
 
-canvas {
-  width: 80vw;
-  height: 80vh;
-  border: 1px solid #9b9b9b;
+.container {
+  max-width: 80vw;
+  margin: 5rem auto;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  background: #fff;
+  padding: 3rem 1rem;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#chart {
+  border: 1px solid #dcdcdc;
 }
