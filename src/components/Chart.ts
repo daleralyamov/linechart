@@ -10,7 +10,7 @@ import {
 import computeBoundaries from "../functions/computeBoundaries.js";
 import { Data } from "../types.js";
 import Line from "./Line.js";
-import yAxis from "./YAxis.js";
+import yAxis from './yAxis.js';
 
 export default function Chart(canvas: HTMLCanvasElement, data: Data) {
 	const ctx = canvas.getContext("2d")!;
