@@ -4,9 +4,10 @@ export type Data = {
 		[key in string]: "line" | "x";
 	};
 	names: {
-		[key in string]: "line" | "x";
+		[key in string]: string;
 	};
 	colors: {
 		[key in string]: string;
 	};
 };
+
