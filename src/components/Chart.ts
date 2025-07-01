@@ -10,7 +10,8 @@ import {
 import computeBoundaries from "../functions/computeBoundaries.js";
 import { Data } from "../types.js";
 import Line from "./Line.js";
-import yAxis from './yAxis.js';
+import xAxis from "./xAxis.js";
+import yAxis from "./yAxis.js";
 
 export default function Chart(canvas: HTMLCanvasElement, data: Data) {
 	const ctx = canvas.getContext("2d")!;
@@ -23,10 +24,12 @@ export default function Chart(canvas: HTMLCanvasElement, data: Data) {
 	const yRation = VIEW_HEIGHT / yMax;
 	const xRation = VIEW_WIDTH / (data.columns[0].length - 2);
 
-	// PaintedYPaddings(ctx);
-	yAxis(ctx, yMax);
-
 	const yData = data.columns.filter((column) => data.types[column[0]] === "line");
+	const xData = data.columns.filter((column) => data.types[column[0]] === "x")[0];
+
+	/* PaintedYPaddings(ctx); */
+	yAxis(ctx, yMax);
+	xAxis(ctx, xData, xRation);
 
 	yData.forEach((column) => {
 		const name = column[0];

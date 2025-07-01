@@ -4,7 +4,7 @@ export default function Line(
 	strokeStyle = "#ff0000"
 ) {
 	ctx.beginPath();
-	ctx.lineWidth = 3;
+	ctx.lineWidth = 4;
 	ctx.lineJoin = "round";
 	ctx.strokeStyle = strokeStyle;
 	for (const [x, y] of coords) {

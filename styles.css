@@ -21,7 +21,3 @@ body {
   padding: 3rem 1rem;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
 }
-
-#chart {
-  border: 1px solid #dcdcdc;
-}
